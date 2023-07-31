@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Stopwatch App</title>
+    <style>
+        #lap-container {
+            margin-top: 20px;
+            color: #fff;
+        }
+
+        #lap-container h3 {
+            margin: 0 auto;
+            width: 20%;
+            color: #fff;
+        }
+        h2{
+            color:#fff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Stopwatch</h1>
+    <div id="timer">00:00:00</div>
+    <button id="startStopBtn" onclick="startStopwatch()" class="bubbly-button">Start</button>
+    <button id="lapResetBtn" onclick="lapResetAction()" class="bubbly" disabled>Lap</button>
+    <h2>LAPS</h2>
+    <div id="lap-container"></div>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
